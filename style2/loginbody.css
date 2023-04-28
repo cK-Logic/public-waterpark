@@ -1,0 +1,184 @@
+
+
+
+#mainimage {
+width: 100%;
+margin-top: 10rem;
+margin-bottom: 4rem;
+}
+
+
+section {
+  height: 300vh;
+  padding: 0 17% 0;
+  color: white;
+  z-index: 9998;
+}
+
+section img {
+  border-radius: 10px;
+  transition: all .5s ease;
+}
+
+section img:hover {
+  scale: 1.05;
+}
+
+section h1 {
+  font-size: 400%;
+  margin-bottom: 1rem;
+}
+
+.thissecond {
+  display: grid;
+  grid-template-columns: repeat(3, 386px);
+  gap: 2rem;
+}
+
+.leftside, .middleside, .rightside {
+  overflow: hidden;
+}
+
+.imgcontainer {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#h2p {
+  margin-top: 1rem;
+}
+
+.numero4container {
+  width: 100%;
+  height: 496px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5rem;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+}
+
+#numero4 {
+  width: 100%;
+  scale: 1;
+  border-radius: 10px;
+}
+
+.numero4context {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  background: linear-gradient( to right, black, rgba(0, 0, 0, 0));
+  height: 100%;
+  padding: 82px 0 0 40px;
+}
+
+.numero4context h5 {
+  color: #b1e4e3;
+}
+.numero4context h3 {
+  font-size: 63px;
+}
+.numero4context p {
+  font-size: 20px;
+}
+.numero4context h2 {
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+
+
+
+#infoh1 {
+  font-size: 40px;
+}
+
+.infopark {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.infopark img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.infopark p {
+  margin-top: 1rem;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.infoimgcontainer {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+
+.phoneright {
+  width: 100%;
+  overflow: hidden;
+}
+
+.phoneright img {
+  height: 85px;
+  cursor: pointer;
+}
+
+.dowmloadapp {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.dowmloadapp img:hover {
+  scale: none;
+}
+
+.dowmloadapp p:first-child {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.dowmloadapp h2,
+.workcontainer h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.dowmloadapp p:nth-child(3) {
+  font-size: 19px;
+  margin-bottom: 1rem;
+}
+
+
+
+.workcontainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.workcontainer img:hover {
+  scale: none;
+}
+
+.workcontainer strong {
+  font-size: 22px;
+}
+
+.workcontainer p {
+  font-size: 19px;
+}
