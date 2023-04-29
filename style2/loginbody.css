@@ -111,8 +111,32 @@ section h1 {
   cursor: pointer;
 }
 
-.infopark p {
+.infopark i {
+  font-size: 32px;
+  transition: all .5s ease;
+}
+
+.arrowdiv {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
   margin-top: 1rem;
+}
+
+.topleft:hover i,
+.topmiddle:hover i,
+.topright:hover i,
+.bottomleft:hover i,
+.bottommiddle:hover i,
+.bottomright:hover i,
+img:hover i {
+  margin-left: 1rem;
+}
+
+
+
+
+.infopark p {
   font-size: 26px;
   cursor: pointer;
 }
