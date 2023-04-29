@@ -107,3 +107,8 @@ function checkuser() {
     document.getElementById("userwelcome").innerHTML = localStorage.getItem("demoUser")
   }
 }
+
+
+function buytickets() {
+  window.location.href = "buytickets.html"
+}
