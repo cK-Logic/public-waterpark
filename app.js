@@ -112,3 +112,12 @@ function checkuser() {
 function buytickets() {
   window.location.href = "buytickets.html"
 }
+
+
+function getRadioValue() {
+  var radio = document.getElementsByName('radiopass');
+  for(i = 0; i < radio.length; i++) {
+  if(radio[i].checked) {
+  console.log(radio[i].value); }
+  }
+}
