@@ -210,10 +210,10 @@ hr {
 
 
 .paymentbutton {
-  display: flex;
+  display: none;
   justify-content: start;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 4rem;  
 }
 
 #payment {
@@ -233,4 +233,10 @@ hr {
 
 #payment:hover {
   box-shadow: inset 0px 0px 45px 0px rgba(255, 255, 255, .5);
+}
+
+b {
+  font-size: 22px;
+  color: white;
+  text-decoration: underline;
 }

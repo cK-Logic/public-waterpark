@@ -114,10 +114,34 @@ function buytickets() {
 }
 
 
+
 function getRadioValue() {
   var radio = document.getElementsByName('radiopass');
+  let showbtn = false;
+
+  let paybtn = document.querySelector(".paymentbutton");
+
+
   for(i = 0; i < radio.length; i++) {
-  if(radio[i].checked) {
-  console.log(radio[i].value); }
+    if(radio[i].checked) {
+      showbtn = true
+    }
   }
+
+  if(showbtn) {
+    paybtn.style.display = "flex"
+  }
+}
+  
+
+function payment() {
+  var radio = document.getElementsByName('radiopass');
+  let price;
+
+  for(i = 0; i < radio.length; i++) {
+    if(radio[i].checked) {
+      price = radio[i].value
+    }
+  }
+  localStorage.setItem("whichpass", price)    
 }
