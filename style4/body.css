@@ -32,9 +32,47 @@ select {
   border-radius: 10px;
   width: 20rem;
   height: 25rem;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.Subtotal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Subtotal p, 
+.Subtotal span {
+  font-size: 19px;
+}
+
+hr {
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  height: 11%;
+  background: transparent;
+  color: white;
+  box-shadow: inset 0px 0px 15px ;
+  border-radius: 10px;
+  border: 0px solid;
+  transition: all .5s ease;
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px;
+  cursor: pointer;
 }
