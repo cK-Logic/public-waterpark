@@ -3,6 +3,7 @@ window.onload = function() {
   localStorage.setItem("demoEmail","mango123@hotmail.com")
   localStorage.setItem("demoPassword","mango123")
   checkuser()
+  checkout()
 }
 
 let demoEmail = localStorage.getItem("demoEmail")
@@ -143,5 +144,43 @@ function payment() {
       price = radio[i].value
     }
   }
-  localStorage.setItem("whichpass", price)    
+  localStorage.setItem("whichpass", price)
+  
+}
+
+
+function checkout() {
+let quantityEl = document.getElementById("quantity");
+let amountEl = document.getElementById("amount");
+let taxesEl = document.getElementById("taxes");
+let passtotalEl = document.getElementById("passtotal");
+
+  quantityEl.addEventListener("change", function() {
+  let quantity = parseInt(quantityEl.value);
+
+  let whichpass = parseInt(localStorage.getItem("whichpass"));
+  let amount = whichpass * quantity;
+  let taxes = Math.round(amount/4);
+  let passtotal = amount + taxes;
+
+  amountEl.innerHTML = "$" + amount;
+  taxesEl.innerHTML = "$" + taxes;
+  passtotalEl.innerHTML = "$" + passtotal;
+});
+
+  quantityEl.dispatchEvent(new Event("change"));
+
+
+  if(localStorage.getItem("whichpass") == "129") {
+    document.getElementById("passname").innerHTML = "BRONZE PASS"
+  }
+  else if(localStorage.getItem("whichpass") == "177") {
+    document.getElementById("passname").innerHTML = "SILVER PASS"
+  }
+  else if(localStorage.getItem("whichpass") == "204") {
+    document.getElementById("passname").innerHTML = "GOLD PASS"
+  }
+  else {
+    document.getElementById("passname").innerHTML = "PLATINUM PASS"
+  }
 }
